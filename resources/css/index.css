@@ -189,3 +189,69 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
+/* Main Section */
+
+.main {
+  background: #000000;
+  background: linear-gradient(to right, #161616, #000000);
+  padding: 200px 0;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 90%;
+  text-align: center;
+  padding: 30px;
+}
+
+.main__heading {
+  font-size: 100px;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.main__heading span {
+  /* Create gradient colors */
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background-size: 100%;
+    /* Fills gradient into letters from background */
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.main__discription {
+  font-size: 60px;
+  /* Create gradient colors */
+  background: #da22ff;
+  background: -webkit-linear-gradient(to right, #9114ff, #da22ff, #833ab4);
+  background: linear-gradient(to right, #8f0eff, #da22ff, #833ab4);
+  background-size: 100%;
+  /* Fills gradient into letters from background */
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.highlight {
+  border-bottom: 4px solid rgb(132, 0, 255);
+}
+
+@media screen and (max-width: 768px) {
+  .main__heading {
+    font-size: 60px;
+  }
+
+  .main__discription {
+    font-size: 40px;
+  }
+}
